@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PhotoEditor Upload Photo Adjust Brightness , Saturation , Contrast , Hue , Sepia , Blur and you can download the edited image
+Check out the Webiste Here [http://www.photoeditor-am.netlify.app](Here)
 
 ## Available Scripts
 
