@@ -1,5 +1,5 @@
 PhotoEditor Upload Photo Adjust Brightness , Saturation , Contrast , Hue , Sepia , Blur and you can download the edited image
-Check out the Webiste Here [http://www.photoeditor-am.netlify.app](Here)
+Check out the Webiste Here [http://www.photoeditor-am.netlify.app]
 
 ## Available Scripts
 
