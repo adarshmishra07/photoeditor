@@ -1,38 +1,129 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: rgb(4,70,77);
+background: radial-gradient(circle, rgba(4,70,77,1) 47%, rgba(28,174,182,1) 100%);
+}
+
+.editor{
+  height: 100vh;
+  width: 100%;
+  /* overflow: hidden; */
+}
+.editor .image__container{
+  margin: 20px auto;
   text-align: center;
+} 
+
+.editor .image__container img{
+  height: 65vh;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width:650px){
+  .editor .image__container img{
+    height:auto;
+    width: 100%;
   }
 }
+.white{
+  background-color: rgba(255, 255, 255, 0.472);
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slider-container {
+  grid-area: slider;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.slider {
+  width: 100%;
+  cursor: pointer;
+}
+
+.options {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.options button{
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.options button:hover{
+  box-shadow: 3px 4px 5px #6e6d6d, -3px -4px 5px #6e6d6d;
+}
+
+@media only screen and (max-width:700px){
+  .options{
+    width: 100%;
+  }
+}
+.title{
+  margin: 20px auto;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.largeFile:after {
+  position:absolute;
+  width:60%;
+  max-width:800px;
+  content:"Upload your file";
+  left:50%;
+  top: 40%;
+  margin:20px auto;
+  text-align:center;
+  padding:50px 0px 50px 0px;
+  border-radius:10px;
+  border:5px dashed #ccc;
+  color:#ccc;
+  font-family:"Helvetica Neue", Helvetica, Arial;
+  font-size:30px; 
+  transform: translate(-50%,-50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.largeFile:hover:after {
+  background:rgba(255, 255, 255, 0.233);
+  color:#fff;
+  cursor:pointer;
+}
+
+
+.largeFile input#file {
+    width: 0px;
+    height: 0px;
+}
+
+.option__icon{
+  height: 50px;
+}
+
+@media only screen and (max-width:600px){
+  .option__icon{
+    height: 35px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+canvas {
+  display: none;
+}
+
+#download {
+  background-color: #1d1f2080;
+  padding:8px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+#download:hover{
+  background-color: #000000;
 }
