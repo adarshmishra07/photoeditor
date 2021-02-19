@@ -1,11 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "PhotoEditor",
+  "name": "Photoeditor",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "splash.png",
+      "type": "image/png",
+      "sizes": "512x512 1201x1201"
     }
   ],
   "start_url": ".",
